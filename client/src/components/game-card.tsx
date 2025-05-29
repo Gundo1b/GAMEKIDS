@@ -1,4 +1,4 @@
-import { Users, Brain, MessageCircle, Smile } from 'lucide-react';
+import { Heart, Star, Camera, HandHeart, Scale, Sparkles } from 'lucide-react';
 import { GameCategory } from '@/lib/game-data';
 
 interface GameCardProps {
@@ -7,17 +7,21 @@ interface GameCardProps {
 }
 
 const categoryIcons = {
-  'question-circle': Users,
-  'balance-scale': Brain,
-  'heart': MessageCircle,
-  'running': Smile
+  'heart': Heart,
+  'kiss': Sparkles,
+  'balance-scale': Scale,
+  'photo': Camera,
+  'star': Star,
+  'hand-heart': HandHeart
 };
 
 const categoryFeatures = {
-  'truthOrDare': { icon: Users, text: 'Perfect for groups' },
-  'wouldYouRather': { icon: Brain, text: 'Think & discuss' },
-  'deepQuestions': { icon: MessageCircle, text: 'Deep conversations' },
-  'bodyPartGame': { icon: Smile, text: 'Active & fun' }
+  'intimateQuestions': { icon: Heart, text: 'Connect deeply' },
+  'romanticDares': { icon: Sparkles, text: 'Sweet & playful' },
+  'relationshipChoices': { icon: Scale, text: 'Explore together' },
+  'memoryLane': { icon: Camera, text: 'Cherish moments' },
+  'dreamsTogether': { icon: Star, text: 'Dream big' },
+  'lovingTouch': { icon: HandHeart, text: 'Show affection' }
 };
 
 export function GameCard({ category, onClick }: GameCardProps) {

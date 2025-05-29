@@ -24,14 +24,14 @@
   --ring: 240 4.9% 83.9%;
   --radius: 0.5rem;
   
-  /* Party Colors */
-  --party-coral: 0 81% 69%;
-  --party-turquoise: 175 64% 57%;
-  --party-blue: 202 78% 55%;
-  --party-mint: 150 33% 66%;
-  --party-yellow: 50 100% 61%;
-  --party-navy: 240 46% 14%;
-  --party-deep: 226 47% 16%;
+  /* Romantic Colors */
+  --romantic-rose: 349 89% 60%;
+  --romantic-blush: 350 100% 88%;
+  --romantic-wine: 345 83% 47%;
+  --romantic-gold: 38 92% 50%;
+  --romantic-lavender: 269 69% 76%;
+  --romantic-deep: 345 30% 15%;
+  --romantic-midnight: 240 27% 9%;
 }
 
 .dark {
@@ -73,60 +73,60 @@
 }
 
 @layer utilities {
-  .party-coral {
-    color: hsl(var(--party-coral));
+  .romantic-rose {
+    color: hsl(var(--romantic-rose));
   }
   
-  .bg-party-coral {
-    background-color: hsl(var(--party-coral));
+  .bg-romantic-rose {
+    background-color: hsl(var(--romantic-rose));
   }
   
-  .party-turquoise {
-    color: hsl(var(--party-turquoise));
+  .romantic-blush {
+    color: hsl(var(--romantic-blush));
   }
   
-  .bg-party-turquoise {
-    background-color: hsl(var(--party-turquoise));
+  .bg-romantic-blush {
+    background-color: hsl(var(--romantic-blush));
   }
   
-  .party-blue {
-    color: hsl(var(--party-blue));
+  .romantic-wine {
+    color: hsl(var(--romantic-wine));
   }
   
-  .bg-party-blue {
-    background-color: hsl(var(--party-blue));
+  .bg-romantic-wine {
+    background-color: hsl(var(--romantic-wine));
   }
   
-  .party-mint {
-    color: hsl(var(--party-mint));
+  .romantic-gold {
+    color: hsl(var(--romantic-gold));
   }
   
-  .bg-party-mint {
-    background-color: hsl(var(--party-mint));
+  .bg-romantic-gold {
+    background-color: hsl(var(--romantic-gold));
   }
   
-  .party-yellow {
-    color: hsl(var(--party-yellow));
+  .romantic-lavender {
+    color: hsl(var(--romantic-lavender));
   }
   
-  .bg-party-yellow {
-    background-color: hsl(var(--party-yellow));
+  .bg-romantic-lavender {
+    background-color: hsl(var(--romantic-lavender));
   }
   
-  .party-navy {
-    color: hsl(var(--party-navy));
+  .romantic-deep {
+    color: hsl(var(--romantic-deep));
   }
   
-  .bg-party-navy {
-    background-color: hsl(var(--party-navy));
+  .bg-romantic-deep {
+    background-color: hsl(var(--romantic-deep));
   }
   
-  .party-deep {
-    color: hsl(var(--party-deep));
+  .romantic-midnight {
+    color: hsl(var(--romantic-midnight));
   }
   
-  .bg-party-deep {
-    background-color: hsl(var(--party-deep));
+  .bg-romantic-midnight {
+    background-color: hsl(var(--romantic-midnight));
   }
 }
 
@@ -180,6 +180,6 @@
   transform: translateY(-5px) rotateX(5deg);
 }
 
-.gradient-party-bg {
-  background: linear-gradient(135deg, hsl(var(--party-navy)), hsl(var(--party-deep)), hsl(var(--party-navy)));
+.gradient-romantic-bg {
+  background: linear-gradient(135deg, hsl(var(--romantic-midnight)), hsl(var(--romantic-deep)), hsl(var(--romantic-midnight)));
 }

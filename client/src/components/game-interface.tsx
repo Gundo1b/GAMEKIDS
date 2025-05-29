@@ -47,7 +47,7 @@ export function GameInterface({ category, onBack }: GameInterfaceProps) {
   const questionNumber = usedQuestions.size || 1;
 
   const renderQuestion = () => {
-    if (category.id === 'wouldYouRather') {
+    if (category.id === 'relationshipChoices') {
       const question = currentQuestion as WouldYouRatherQuestion;
       return (
         <div className="space-y-4">
@@ -72,12 +72,10 @@ export function GameInterface({ category, onBack }: GameInterfaceProps) {
       );
     }
 
-    if (category.id === 'truthOrDare') {
-      const question = currentQuestion as TruthOrDareQuestion;
-      const prefix = question.type === 'truth' ? '🤔 TRUTH: ' : '🎭 DARE: ';
+    if (category.id === 'romanticDares') {
       return (
         <div className="text-xl md:text-2xl text-white leading-relaxed font-medium">
-          {prefix}{question.text}
+          💕 {currentQuestion as string}
         </div>
       );
     }
@@ -109,10 +107,12 @@ export function GameInterface({ category, onBack }: GameInterfaceProps) {
           <div className="text-center mb-8">
             <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 bg-gradient-to-r ${category.color}`}>
               <div className="text-3xl text-white">
-                {category.id === 'truthOrDare' && '❓'}
-                {category.id === 'wouldYouRather' && '⚖️'}
-                {category.id === 'deepQuestions' && '❤️'}
-                {category.id === 'bodyPartGame' && '🏃'}
+                {category.id === 'intimateQuestions' && '💕'}
+                {category.id === 'romanticDares' && '✨'}
+                {category.id === 'relationshipChoices' && '⚖️'}
+                {category.id === 'memoryLane' && '📸'}
+                {category.id === 'dreamsTogether' && '⭐'}
+                {category.id === 'lovingTouch' && '💝'}
               </div>
             </div>
             <h2 className="font-bold text-3xl text-white mb-2">{category.title}</h2>
