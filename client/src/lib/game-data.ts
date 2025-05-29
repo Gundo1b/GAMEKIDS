@@ -26,7 +26,7 @@ export const gameData: Record<string, GameCategory> = {
     icon: 'heart',
     color: 'from-rose-400 to-pink-500',
     description: 'Deep questions to discover each other\'s hearts and minds',
-    stats: 'Endless Discovery',
+    stats: 'Soul Connection',
     subtitle: 'Connect Deeply',
     questions: [
       "What was your first impression of me, and how has it changed?",
@@ -38,7 +38,17 @@ export const gameData: Record<string, GameCategory> = {
       "How do you want to be comforted when you're feeling down?",
       "What's a childhood memory that still makes you smile?",
       "What's something you admire about the way I handle challenges?",
-      "If we could travel anywhere together, where would you choose and why?"
+      "If we could travel anywhere together, where would you choose and why?",
+      "What's your deepest insecurity that you feel safe sharing with me?",
+      "How has being with me changed your perspective on love?",
+      "What's something you've never told anyone else but want to share with me?",
+      "What does emotional intimacy mean to you?",
+      "When do you feel most vulnerable, and how can I support you?",
+      "What's a fantasy or aspiration you have for us as a couple?",
+      "How do you want to grow as a person within our relationship?",
+      "What's something about yourself you're still discovering?",
+      "What's your love language, and how do you want me to express love?",
+      "What makes you feel most beautiful/handsome in my eyes?"
     ]
   },
   romanticDares: {
@@ -47,7 +57,7 @@ export const gameData: Record<string, GameCategory> = {
     icon: 'kiss',
     color: 'from-red-400 to-rose-500',
     description: 'Sweet and playful challenges to bring you closer',
-    stats: 'Sweet Moments',
+    stats: 'Passion & Play',
     subtitle: 'Be Playful',
     questions: [
       "Give your partner a 30-second massage on their shoulders",
@@ -59,7 +69,17 @@ export const gameData: Record<string, GameCategory> = {
       "Tell your partner about your favorite memory with them",
       "Give your partner a gentle kiss on their forehead",
       "Hold hands and maintain eye contact for 30 seconds without talking",
-      "Tell your partner why you're proud to be with them"
+      "Tell your partner why you're proud to be with them",
+      "Give your partner a sensual hand massage with lotion",
+      "Whisper something seductive in your partner's ear",
+      "Kiss your partner's neck softly and slowly",
+      "Undress your partner with only your eyes for 30 seconds",
+      "Give your partner a full-body massage with oils",
+      "Take turns describing what you want to do to each other later",
+      "Kiss every inch of your partner's face except their lips",
+      "Tell your partner your favorite thing about their body",
+      "Create a romantic atmosphere and slow dance intimately",
+      "Feed each other chocolate or strawberries sensually"
     ]
   },
   relationshipChoices: {
@@ -131,7 +151,7 @@ export const gameData: Record<string, GameCategory> = {
     icon: 'hand-heart',
     color: 'from-pink-400 to-rose-500',
     description: 'Gentle, affectionate gestures to show your love and care',
-    stats: 'Tender Moments',
+    stats: 'Physical Connection',
     subtitle: 'Show Love',
     questions: [
       "Hold your partner's hand and trace their palm gently",
@@ -143,7 +163,105 @@ export const gameData: Record<string, GameCategory> = {
       "Give your partner butterfly kisses with your eyelashes on their cheek",
       "Massage your partner's temples gently",
       "Hold your partner close and sway together slowly",
-      "Trace 'I love you' on your partner's arm with your finger"
+      "Trace 'I love you' on your partner's arm with your finger",
+      "Caress your partner's face while looking into their eyes",
+      "Run your fingers through your partner's hair slowly",
+      "Kiss your partner's shoulders and collarbone gently",
+      "Hold your partner from behind and breathe together",
+      "Massage your partner's feet while they relax",
+      "Touch your partner's body like you're memorizing every curve",
+      "Give your partner goosebumps by lightly tracing their skin",
+      "Intertwine your fingers and hold hands for five minutes",
+      "Place your hand on your partner's heart and feel it beat",
+      "Cuddle naked and just enjoy the skin-to-skin contact"
+    ]
+  },
+  spicyQuestions: {
+    id: 'spicyQuestions',
+    title: 'Spicy Questions',
+    icon: 'flame',
+    color: 'from-red-500 to-orange-500',
+    description: 'Intimate questions to explore desires and deepen passion',
+    stats: 'Adults Only',
+    subtitle: 'Get Heated',
+    questions: [
+      "What's your favorite part of my body and why?",
+      "What's something you've always wanted to try with me?",
+      "Describe your perfect romantic evening with me",
+      "What turns you on most about me?",
+      "What's your biggest fantasy involving us?",
+      "Where's the most adventurous place you'd want to be intimate?",
+      "What's something new you'd like to explore together?",
+      "How do you like to be kissed?",
+      "What's your favorite way for me to touch you?",
+      "Describe the most passionate moment we've shared",
+      "What drives you wild when I do it?",
+      "What's something that instantly makes you think of me?",
+      "How do you want me to seduce you?",
+      "What's your favorite memory of us being intimate?",
+      "What's something you find irresistibly attractive about me?",
+      "Describe your ideal morning after spending the night together",
+      "What's a secret desire you have about our relationship?",
+      "How do you want to surprise me romantically?",
+      "What makes you feel most desired by me?",
+      "What's something you want more of in our physical relationship?"
+    ]
+  },
+  seductionDares: {
+    id: 'seductionDares',
+    title: 'Seduction Dares',
+    icon: 'fire',
+    color: 'from-purple-500 to-red-500',
+    description: 'Playful challenges to ignite passion and desire',
+    stats: 'Heat Level: Hot',
+    subtitle: 'Turn Up Heat',
+    questions: [
+      "Give your partner a seductive look for 30 seconds without breaking eye contact",
+      "Whisper your partner's name in their ear in the most seductive way possible",
+      "Kiss your partner's neck for one minute",
+      "Tell your partner exactly what you want to do to them tonight",
+      "Give your partner a lap dance to an imaginary song",
+      "Remove one piece of your partner's clothing very slowly",
+      "Massage your partner's inner thighs for two minutes",
+      "Kiss your partner passionately for two minutes straight",
+      "Tell your partner your favorite thing about making love to them",
+      "Give your partner a hickey somewhere only you can see",
+      "Describe in detail how you want your partner to touch you",
+      "Blindfold your partner and kiss them somewhere unexpected",
+      "Take a steamy shower or bath together",
+      "Give your partner a full-body massage with oils",
+      "Tell your partner your dirtiest fantasy about them",
+      "Kiss your partner's body from head to toe",
+      "Recreate your first kiss but make it more passionate",
+      "Give your partner goosebumps using only your breath",
+      "Tell your partner what you love most about their body",
+      "Make your partner feel like the most desirable person alive"
+    ]
+  },
+  naughtyChoices: {
+    id: 'naughtyChoices',
+    title: 'Naughty Choices',
+    icon: 'devil',
+    color: 'from-red-600 to-pink-600',
+    description: 'Provocative choices to explore your wild side together',
+    stats: 'Choose Wisely',
+    subtitle: 'Be Bold',
+    questions: [
+      { optionA: "Seduce me with words", optionB: "Seduce me with touch" },
+      { optionA: "Make love in the morning", optionB: "Make love at night" },
+      { optionA: "Be the dominant one tonight", optionB: "Let me take control" },
+      { optionA: "Slow and romantic", optionB: "Passionate and intense" },
+      { optionA: "Role play as strangers", optionB: "Be completely ourselves" },
+      { optionA: "Make out in public", optionB: "Keep it private" },
+      { optionA: "Surprise me spontaneously", optionB: "Plan something elaborate" },
+      { optionA: "Lights on", optionB: "Candlelight only" },
+      { optionA: "Talk during intimacy", optionB: "Express with sounds only" },
+      { optionA: "Focus on foreplay", optionB: "Skip to the main event" },
+      { optionA: "Try something completely new", optionB: "Perfect what we love" },
+      { optionA: "Wake me up with kisses", optionB: "Let me sleep in your arms" },
+      { optionA: "Shower together", optionB: "Massage with oils" },
+      { optionA: "Weekend getaway", optionB: "Romantic night at home" },
+      { optionA: "Express love physically", optionB: "Express love verbally" }
     ]
   }
 };

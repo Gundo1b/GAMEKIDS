@@ -72,10 +72,35 @@ export function GameInterface({ category, onBack }: GameInterfaceProps) {
       );
     }
 
-    if (category.id === 'romanticDares') {
+    if (category.id === 'romanticDares' || category.id === 'seductionDares' || category.id === 'lovingTouch') {
       return (
         <div className="text-xl md:text-2xl text-white leading-relaxed font-medium">
           💕 {currentQuestion as string}
+        </div>
+      );
+    }
+
+    if (category.id === 'naughtyChoices') {
+      const question = currentQuestion as WouldYouRatherQuestion;
+      return (
+        <div className="space-y-4">
+          <div className="bg-white/10 rounded-2xl p-4 border border-white/20">
+            <div className="flex items-center">
+              <div className="bg-red-500 rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                <span className="text-white font-bold text-sm">A</span>
+              </div>
+              <div className="text-white text-lg">{question.optionA}</div>
+            </div>
+          </div>
+          <div className="text-center text-white/60 text-lg font-bold">OR</div>
+          <div className="bg-white/10 rounded-2xl p-4 border border-white/20">
+            <div className="flex items-center">
+              <div className="bg-pink-500 rounded-full w-8 h-8 flex items-center justify-center mr-3">
+                <span className="text-white font-bold text-sm">B</span>
+              </div>
+              <div className="text-white text-lg">{question.optionB}</div>
+            </div>
+          </div>
         </div>
       );
     }
@@ -113,6 +138,9 @@ export function GameInterface({ category, onBack }: GameInterfaceProps) {
                 {category.id === 'memoryLane' && '📸'}
                 {category.id === 'dreamsTogether' && '⭐'}
                 {category.id === 'lovingTouch' && '💝'}
+                {category.id === 'spicyQuestions' && '🔥'}
+                {category.id === 'seductionDares' && '😈'}
+                {category.id === 'naughtyChoices' && '💋'}
               </div>
             </div>
             <h2 className="font-bold text-3xl text-white mb-2">{category.title}</h2>
