@@ -23,12 +23,12 @@ export function GameInterface({ category, onBack }: GameInterfaceProps) {
   const getRandomQuestion = () => {
     if (isAnimating) return;
     
-    let availableQuestions = [...Array(category.questions.length).keys()];
+    let availableQuestions = Array.from(Array(category.questions.length).keys());
     
     // If all questions used, reset
     if (usedQuestions.size >= category.questions.length) {
       setUsedQuestions(new Set());
-      availableQuestions = [...Array(category.questions.length).keys()];
+      availableQuestions = Array.from(Array(category.questions.length).keys());
     } else {
       availableQuestions = availableQuestions.filter(index => !usedQuestions.has(index));
     }
@@ -38,7 +38,7 @@ export function GameInterface({ category, onBack }: GameInterfaceProps) {
     setIsAnimating(true);
     setTimeout(() => {
       setCurrentQuestionIndex(randomIndex);
-      setUsedQuestions(prev => new Set([...prev, randomIndex]));
+      setUsedQuestions(prev => new Set([...Array.from(prev), randomIndex]));
       setIsAnimating(false);
     }, 300);
   };
@@ -101,7 +101,7 @@ export function GameInterface({ category, onBack }: GameInterfaceProps) {
 
       {/* Game Card */}
       <div className="relative">
-        <div className={`bg-party-deep/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/10 min-h-[400px] flex flex-col justify-center transition-all duration-300 ${isAnimating ? 'animate-card-flip' : ''}`}>
+        <div className={`bg-romantic-deep/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/10 min-h-[400px] flex flex-col justify-center transition-all duration-300 ${isAnimating ? 'animate-card-flip' : ''}`}>
           
           {/* Category Header */}
           <div className="text-center mb-8">

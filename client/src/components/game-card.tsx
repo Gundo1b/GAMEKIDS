@@ -25,9 +25,9 @@ const categoryFeatures = {
 };
 
 export function GameCard({ category, onClick }: GameCardProps) {
-  const IconComponent = categoryIcons[category.icon as keyof typeof categoryIcons] || Users;
+  const IconComponent = categoryIcons[category.icon as keyof typeof categoryIcons] || Heart;
   const feature = categoryFeatures[category.id as keyof typeof categoryFeatures];
-  const FeatureIcon = feature?.icon || Users;
+  const FeatureIcon = feature?.icon || Heart;
 
   return (
     <div 
